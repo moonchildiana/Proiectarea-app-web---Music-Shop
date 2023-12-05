@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Moonchild Music Shop</title>
+    <style>
+        /* Stiluri CSS pentru aspectul general al site-ului */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .header {
+            background-image: url('/images/logo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            /*justify-content: space-between;*/
+            align-items: center;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .search-container {
+            position: absolute; /* Setăm poziția absolută */
+            left: 20px; /* Poziționăm în colțul stânga sus */
+            /*top: 50%; !* Aliniem la mijlocul antetului *!*/
+            /*transform: translateY(-50%); !* Centrăm vertical *!*/
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            padding: 8px;
+            margin-right: 10px;
+        }
+        .search-button {
+            background-color: #d0aaee;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cart-button,
+        .login-button{
+            background-color: #d0aaee;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+            width: 100px;
+            height: auto;
+        }
+        .cart-icon {
+            width: 50px;
+            height: auto;
+            margin-left: 1000px;
+            vertical-align: middle;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .categories {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .categories a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .logo-img {
+            max-width: 100%; /* Imaginea se va adapta la lățimea containerului */
+            height: auto; /* Înălțimea se va ajusta proporțional */
+        }
+        /* Alte stiluri pentru imagini, butoane, etc., după necesități */
+    </style>
+</head>
+<body>
+<div class="header">
+
+    <div class="container">
+
+        <h1>Moonchild Music Shop</h1>
+        <div class="categories">
+            <a href="#">Acasă</a>
+            <a href="#">Produse</a>
+            <a href="#">Pre-Order</a>
+            <a href="#">Despre</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="navbar">
+            <div class="search-container">
+                <div class="container">
+                    <input type="text" placeholder="Caută..." class="search-bar">
+                    <button class="search-button">Caută</button>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Restul conținutului site-ului... -->
+            </div>
+            <img src="/images/shopping-cart-icon.png" alt="Coș de cumpărături" class="cart-icon">
+            <button class="cart-button">Coș(0)</button>
+            <a href="#" class="login-button">LogIn</a>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
