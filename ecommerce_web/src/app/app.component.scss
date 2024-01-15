@@ -1,0 +1,64 @@
+$primary-color: #1E1E1E;
+$secondary-color: #b273df;
+$text-color: #FFFFFF;
+
+$font-family: 'Arial', sans-serif;
+
+body {
+  font-family: $font-family;
+  background-color: $primary-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $primary-color;
+
+  img {
+    width: 120px;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .search-bar {
+    input {
+      padding: 8px;
+      border: none;
+      background-color: $secondary-color;
+      color: $primary-color;
+
+      &::placeholder {
+        color: $primary-color;
+      }
+    }
+
+    button {
+      padding: 8px 15px;
+      background-color: $secondary-color;
+      color: $primary-color;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
